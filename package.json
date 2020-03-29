@@ -4,7 +4,7 @@
   "description": "Technical Board Website 2020. A Programming Club project.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
