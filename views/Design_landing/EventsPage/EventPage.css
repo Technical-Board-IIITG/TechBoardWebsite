@@ -1,7 +1,7 @@
 body, html{
 	height: 100%;
 	background-repeat: no-repeat;
-	color: darkslategray;
+	color: rgb(69, 0, 0);
 }
 
 .navbar{
@@ -10,7 +10,7 @@ body, html{
 
 #header{
 	height: 100vh;
-	background-image: linear-gradient(lightyellow, white);
+	background-image: linear-gradient(to top left, rgb(255, 255, 220), white);
 }
 
 #header-image{
@@ -38,9 +38,8 @@ body, html{
 }
 
 #AboutPage{
-	background-image: linear-gradient(lightyellow, white);
+	background-image: linear-gradient(to top left, rgb(255, 255, 220), white);
 	height: 100vh;
-	color: grey;
 }
 
 #ABOUT{
@@ -53,22 +52,22 @@ body, html{
 }
 
 #AboutQuoter{
-	color: burlywood;
+	color: limegreen;
 	width: 80%;
 	margin: auto;
 }
 
 #AboutInfo h6{
+	text-align: center;
 	padding-top: 10%;
-	font-weight: lighter;
+	font-weight: 400;
 	margin: auto;
 	width: 80%;
 }
 
 #PastEventsPage{
 	height: 100vh;
-	color: grey;
-	background-image: linear-gradient(lightyellow, white);
+	background-image: linear-gradient(to top left, rgb(255, 255, 220), white);
 }
 
 #PASTEVENTS{
@@ -76,12 +75,6 @@ body, html{
 	margin: auto;
 	text-align: center;
 	padding-bottom: 5%;
-}
-
-#PastEventsPage{
-	height: 100vh;
-	color: grey;
-	background-image: linear-gradient(lightyellow, white);
 }
 
 #UPCOMINGEVENTS{
@@ -93,8 +86,7 @@ body, html{
 
 #UpcomingEventsPage{
 	height: 100vh;
-	color: grey;
-	background-image: linear-gradient(lightyellow, white);
+	background-image: linear-gradient(to top left, rgb(255, 255, 220), white);
 }
 
 #EventCarousel{
@@ -103,8 +95,8 @@ body, html{
 	width: 80%;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon{
-	background-color: black;
+.carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators{
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .carousel img{
@@ -119,9 +111,5 @@ body, html{
 	#header-image{
 		margin-top: 15%;
 		margin-bottom: 10%;
-	}
-	#EventCarousal{
-		width: 80%;
-		height: auto;
 	}
 }

@@ -7,11 +7,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="EventPage.css">
-	<title>Technical Board, Indian Institute of Information Technology, Guwahati</title>
+	<title>Technical Board, Events Page</title>
 	
 </head>
+
+
 <body>
+
+  <!-- NAVBAR -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
 		<div class="container-fluid">
       <a class="navbar-brand mr-0 py-0" href="https://www.iiitg.ac.in" title='IIITG Home Page'>
         <img class='navbar-brand mr-0 py-0' src= 'CollegeLogo.png' height='32px'>
@@ -19,44 +24,50 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
       </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-      <ul class="navbar-nav align-items-center">
-        <li class="nav-item mx-5">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item mx-5">
-          <a class="nav-link" href="#">Facilities</a>
-        </li>
-        <li class="nav-item mx-5">
-          <a class="nav-link" href="#">Gallery</a>
-        </li>
-        <li class="nav-item mx-5">
-          <a class="nav-link active" href="#">Events</a>
-        </li>
-        <li class="nav-item mx-5">
-          <a class="nav-link" href="#">Hall Of Fame</a>
-        </li>
-        <li class="nav-item mx-5">
-          <a class="nav-link" href="#">Initiatives</a>
-        </li>
-        <li class="nav-item dropdown mx-5">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarClubDropdown" data-toggle="dropdown">
-            Clubs <span class="caret"></span>
-          </a>
-          <div class="dropdown-menu drop-menu-left">
-            <a href="#" class="dropdown-item">Programming Club</a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">Robotics Club</a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">Mavericks Club</a>
-          </div>
-        </li>
-      </ul>
-    </div>
+      
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item mx-5">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link" href="#">Facilities</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link active" href="#">Events</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link" href="#">Hall Of Fame</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link" href="/views/Design_landing/InitiativesPage/InitiativePage.html">Initiatives</a>
+          </li>
+
+          <li class="nav-item dropdown mx-5">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarClubDropdown" data-toggle="dropdown">
+              Clubs <span class="caret"></span>
+            </a>
+            <div class="dropdown-menu drop-menu-left">
+              <a href="#" class="dropdown-item">Programming Club</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Robotics Club</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Mavericks Club</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
     </div>
   </nav>
+  <!-- NAVBAR ENDS-->
 
 
+  <!-- HEADER -->
   <section class="container-fluid" id="header">
     <div class="row">
       <div class="row">
@@ -71,13 +82,15 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <a href="http://www.iiitg.ac.in/yuvaan2020/" class="btn btn-info" title="Yuvaan Home Page">
+      <a href="http://www.iiitg.ac.in/yuvaan2020/" class="btn btn-info">
         Know More
       </a>
     </div>
   </section>
+  <!-- HEADER ENDS-->
 
 
+  <!-- ABOUT PAGE-->
   <section class="container" id="AboutPage">
     <div class="row justify-content-center" id="ABOUT">
       <h1 class="display-4">ABOUT</h1>
@@ -89,16 +102,30 @@
       <h3>-Douglas H. Everett</h3>
     </div>
     <div class="row" id="AboutInfo">
-      <h6>This site contains all the information and details about all past events, the currently going ones, and the upcoming ones.</h6>
+      <h6>This site contains all the information and details about all past events, the currently going ones, and the upcoming ones. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, veniam aperiam modi nisi odio in dolorum corrupti. Natus, nihil? Provident nemo architecto vel similique praesentium, pariatur iusto earum aliquid?</h6>
     </div>
   </section>
+  <!-- ABOUT PAGE ENDS-->
 
 
+  <!-- PAST EVENTS PAGE-->
   <section class="container" id="PastEventsPage">
+
     <div class="row justify-content-center" id="PASTEVENTS">
       <h1 class="display-4">PAST EVENTS</h1>
     </div>
+
+    <!-- PAST EVENTS CAROUSEL-->
     <div id="PastEventCarousel" class="row carousel slide" data-ride="carousel">
+
+      <ul class="carousel-indicators">
+        <li data-target="#PastEventCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#PastEventCarousel" data-slide-to="1"></li>
+        <li data-target="#PastEventCarousel" data-slide-to="2"></li>
+        <li data-target="#PastEventCarousel" data-slide-to="3"></li>
+        <li data-target="#PastEventCarousel" data-slide-to="4"></li>
+      </ul>
+
       <div class="carousel-inner">
         <div class="carousel-item active">
           <a href="#PastModalEvent1" data-toggle="modal">
@@ -126,14 +153,18 @@
           </a>
         </div>
       </div>
+
       <a class="carousel-control-prev" href="#PastEventCarousel" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </a>
       <a class="carousel-control-next" href="#PastEventCarousel" data-slide="next">
         <span class="carousel-control-next-icon"></span>
       </a>
-    </div>
 
+    </div>
+    <!-- PAST EVENTS CAROUSEL ENDS-->
+
+    <!-- PAST EVENTS MODALS-->
     <div class="modal fade" id="PastModalEvent1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
@@ -145,20 +176,34 @@
             Description of the event, prizes if any, or winners. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit culpa cupiditate saepe voluptatibus animi soluta pariatur quos consectetur! Cupiditate eaque fugit libero aliquid eligendi deleniti dolore labore iure laborum doloremque?
           </div>
           <div class="modal-footer justify-content-between">
-            <a href="#" class="btn btn-info" title="Gallery">Gallery</a>
-            <a href="#" class="btn btn-info" title="Event Site">Know More</a>
+            <a href="#" class="btn btn-info">Gallery</a>
+            <a href="#" class="btn btn-info">Know More</a>
           </div>  
         </div>
       </div>
     </div>
+    <!-- PAST EVENTS MODALS ENDS-->
+
   </section>
+  <!-- PAST EVENTS PAGE ENDS -->
 
 
+  <!-- UPCOMING EVENTS PAGE-->
   <section class="container" id="UpcomingEventsPage">
     <div class="row justify-content-center" id="UPCOMINGEVENTS">
       <h1 class="display-4">UPCOMING EVENTS</h1>
     </div>
     <div id="UpcomingEventCarousel" class="row carousel slide" data-ride="carousel">
+
+    <!-- UPCOMING EVENTS CAROUSEL-->
+    <ul class="carousel-indicators">
+      <li data-target="#UpcomingEventCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#UpcomingEventCarousel" data-slide-to="1"></li>
+      <li data-target="#UpcomingEventCarousel" data-slide-to="2"></li>
+      <li data-target="#UpcomingEventCarousel" data-slide-to="3"></li>
+      <li data-target="#UpcomingEventCarousel" data-slide-to="4"></li>
+    </ul>
+
       <div class="carousel-inner">
         <div class="carousel-item active">
           <a href="#UpcomingModalEvent1" data-toggle="modal">
@@ -186,6 +231,7 @@
           </a>
         </div>
       </div>
+
       <a class="carousel-control-prev" href="#UpcomingEventCarousel" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </a>
@@ -193,7 +239,9 @@
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
+    <!-- UPCOMING EVENTS CAROUSEL ENDS-->
 
+    <!-- UPCOMING EVENTS MODALS-->
     <div class="modal fade" id="UpcomingModalEvent1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
@@ -205,14 +253,19 @@
             Description of the event, prizes if any, or winners. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit culpa cupiditate saepe voluptatibus animi soluta pariatur quos consectetur! Cupiditate eaque fugit libero aliquid eligendi deleniti dolore labore iure laborum doloremque?
           </div>
           <div class="modal-footer justify-content-between">
-            <a href="#" class="btn btn-info" title="Gallery">Gallery</a>
-            <a href="#" class="btn btn-info" title="Event Site">Know More</a>
+            <a href="#" class="btn btn-info">Gallery</a>
+            <a href="#" class="btn btn-info">Know More</a>
           </div>  
         </div>
       </div>
     </div>
-  </section>
+    <!-- UPCOMING EVENTS MODALS-->
 
+  </section>
+  <!-- UPCOMING EVENTS PAGE ENDS-->
+
+
+    <!-- FOR BOOTSTRAP AND FONT AWESOME -->
     <script type="text/javascript" src="EventPage.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
