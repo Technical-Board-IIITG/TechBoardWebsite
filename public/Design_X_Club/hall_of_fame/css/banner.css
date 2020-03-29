@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+.banner {
+	position: relative;
+	z-index: 1;
+	margin: 120px auto;
+	width: 800px;
+}
+
+.banner .line {
+	margin: 0 0 10px;
+	width: 100%;
+	height: 78px;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3em;
+	line-height: 78px;
+	transform: skew(0, -10deg);
+}
+
+.banner .line:after,
+.banner .line:first-child:before {
+	position: absolute;
+	top: 44px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 330px;
+	height: 78px;
+	border-radius: 4px;
+	background: rgba(180,180,180,0.9);
+	content: '';
+	transform: skew(0, 15deg);
+}
+
+.banner .line:first-child:before {
+	top: -10px;
+	right: 0;
+	left: auto;
+}
+
+.banner .line:first-child:before,
+.banner .line:last-child:after {
+	width: 0;
+	height: 0;
+	border-width: 38px;
+	border-style: solid;
+	border-color: rgba(180,180,180,0.8) rgba(180,180,180,0.8) transparent transparent;
+	background: transparent;
+}
+
+.banner .line:last-child:after {
+	top: 12px;
+	border-color: transparent transparent rgba(180,180,180,0.8) rgba(180,180,180,0.8);
+}
+
+.banner span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	background: #1C486C;
+	color: #fff;
+	text-shadow: 1px 1px 0 #444;
+    font-weight: 900;
+    font-size: 70px;
+    letter-spacing: 2px;
+}

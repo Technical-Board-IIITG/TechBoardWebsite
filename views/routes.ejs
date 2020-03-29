@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Routes and Endpoints</title>
+	</head>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<body>
+
+		<br>
+
+		<div class = "container card" style = "width: 80%;">
+
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Method</th>
+						<th>Endpoint</th>
+					</tr>
+				</thead>
+
+				<%routes.forEach(function(i) {%>
+					<tr>
+						<td style="text-transform:uppercase"><%= i.stack[0].method%></td>
+						<td><a href = "<%= i.path %>" > <%= i.path %> </a>  </td>
+					</tr>
+				<%})%>
+			</table>
+
+			<!--Route {
+				path: '/xclub/hof',
+				stack:
+				 [ Layer {
+					 handle: [Function],
+					 name: '<anonymous>',
+					 params: undefined,
+					 path: undefined,
+					 keys: [],
+					 regexp: /^\/?$/i,
+					 method: 'get' } ],
+				methods: { get: true } }
+			-->
+
+		</div>
+
+	</body>
+
+</html>
+
+
