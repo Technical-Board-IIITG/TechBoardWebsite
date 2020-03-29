@@ -1,0 +1,127 @@
+body, html{
+	height: 100%;
+	background-repeat: no-repeat;
+	color: darkslategray;
+}
+
+.navbar{
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+#header{
+	height: 100vh;
+	background-image: linear-gradient(lightyellow, white);
+}
+
+#header-image{
+	margin: auto;
+	margin-top: 4%;
+}
+
+.header-text {
+	text-align: center;
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.header-text h2{
+	color: red;
+	padding-left: 5%;
+}
+
+.header-text h6{
+	line-height: 200%;
+	width: 80%;
+	margin: auto;
+	font-weight: 400;
+}
+
+#AboutPage{
+	background-image: linear-gradient(lightyellow, white);
+	height: 100vh;
+	color: grey;
+}
+
+#ABOUT{
+	padding-bottom: 10%;
+}
+
+#AboutQuote{
+	width: 80%;
+	margin: auto;
+}
+
+#AboutQuoter{
+	color: burlywood;
+	width: 80%;
+	margin: auto;
+}
+
+#AboutInfo h6{
+	padding-top: 10%;
+	font-weight: lighter;
+	margin: auto;
+	width: 80%;
+}
+
+#PastEventsPage{
+	height: 100vh;
+	color: grey;
+	background-image: linear-gradient(lightyellow, white);
+}
+
+#PASTEVENTS{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+#PastEventsPage{
+	height: 100vh;
+	color: grey;
+	background-image: linear-gradient(lightyellow, white);
+}
+
+#UPCOMINGEVENTS{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+#UpcomingEventsPage{
+	height: 100vh;
+	color: grey;
+	background-image: linear-gradient(lightyellow, white);
+}
+
+#EventCarousel{
+	margin: auto;
+	padding-top: 5%;
+	width: 80%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+	background-color: black;
+}
+
+.carousel img{
+	width: 100%;
+}
+
+.modal-title{
+	margin: auto;
+}
+
+@media only screen and (max-width: 600px){
+	#header-image{
+		margin-top: 15%;
+		margin-bottom: 10%;
+	}
+	#EventCarousal{
+		width: 80%;
+		height: auto;
+	}
+}
