@@ -15,6 +15,14 @@ app.get('/', (req, res) => {
 	res.render("routes.ejs", {routes: routes});
 });
 
+app.get('/landing', (req, res) => {
+	res.render('./Design_landing/index.ejs');
+});
+
+app.get('/landing/facility', (req, res) => {
+	res.render('./Design_landing/facility/facility.ejs');
+});
+
 app.get('/xclub', (req, res) => {
 	res.render('./Design_X_Club/index.ejs');
 });
@@ -33,6 +41,14 @@ app.get('/xclub/gallery/archive', (req, res) => {
 
 app.get('/xclub/resources', (req, res) => {
 	res.render('./Design_X_Club/resouces/resourse.ejs');
+});
+
+app.get('/xclub/events', (req, res) => {
+	res.render('./Design_X_Club/events/events.ejs');
+});
+
+app.get('/xclub/projects', (req, res) => {
+	res.render('./Design_X_Club/projects/projects.ejs');
 });
 
 app.listen(process.env.PORT || port, () => {
