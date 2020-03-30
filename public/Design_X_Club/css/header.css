@@ -1,0 +1,593 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #5D9090;
+    overflow-x: hidden;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header {
+        width: 100%;
+    }
+
+    .confetti {
+        position: relative;
+        height: 90vh;
+        background: #484c4f;
+        overflow: hidden;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .confetti .confetti-layer {
+        opacity: 0;
+        transition: opacity 2s;
+    }
+
+    .confetti.active .confetti-layer {
+        opacity: 1;
+    }
+
+    .confetti-pixel {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        height: 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        animation: 10s confettiDrop ease-in-out infinite alternate;
+    }
+
+    .confetti-pixel:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .confetti-layer {
+        display: table;
+        position: absolute;
+        left: -10%;
+        width: 120%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .confetti-layer .inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .confetti-layer.front {
+        z-index: 3;
+    }
+
+    .confetti-layer.front .confetti-pixel {
+        width: 5%;
+        margin: 10% 5% 0;
+        padding-bottom: 5%;
+        animation-delay: -3.33333333s;
+    }
+
+    .confetti-layer.front .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.5);
+    }
+
+    .confetti-layer.front .confetti-pixel:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .confetti-layer.mid {
+        z-index: 2;
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+
+    .confetti-layer.mid .confetti-pixel {
+        width: 2.5%;
+        margin: 8% 2.5% 0;
+        padding-bottom: 2.5%;
+        animation-delay: -6.66666667s;
+    }
+
+    .confetti-layer.mid .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.7);
+    }
+
+    .confetti-layer.mid .confetti-pixel:nth-child(odd) {
+        margin-top: 0;
+    }
+
+    .confetti-layer.back {
+        z-index: 1;
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+    }
+
+    .confetti-layer.back .confetti-pixel {
+        width: 1.25%;
+        margin: 5% 5% 0;
+        padding-bottom: 1.25%;
+    }
+
+    .confetti-layer.back .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.9);
+    }
+
+    .confetti-layer.back .confetti-pixel:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .banner-content {
+        display: table;
+        color: white;
+        z-index: 5;
+    }
+
+    .banner-content .logo h1 {
+        font-weight: 900;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        left: 13%;
+        z-index: 5;
+        top: 60vh;
+        letter-spacing: 2px;
+    }
+
+    .banner-content .logo img {
+        position: absolute;
+        left: 24%;
+        z-index: 5;
+        height: 200px;
+        width: 200px;
+    }
+
+    @keyframes confettiDrop {
+        0% {
+            transform: none;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .header {
+        width: 100%;
+    }
+
+    .confetti {
+        position: relative;
+        height: 70vh;
+        background: #484c4f;
+        overflow: hidden;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .confetti .confetti-layer {
+        opacity: 0;
+        transition: opacity 2s;
+    }
+
+    .confetti.active .confetti-layer {
+        opacity: 1;
+    }
+
+    .confetti-pixel {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        height: 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        animation: 10s confettiDrop ease-in-out infinite alternate;
+    }
+
+    .confetti-pixel:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .confetti-layer {
+        display: table;
+        position: absolute;
+        left: -10%;
+        width: 120%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .confetti-layer .inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .confetti-layer.front {
+        z-index: 3;
+    }
+
+    .confetti-layer.front .confetti-pixel {
+        width: 5%;
+        margin: 10% 5% 0;
+        padding-bottom: 5%;
+        animation-delay: -3.33333333s;
+    }
+
+    .confetti-layer.front .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.5);
+    }
+
+    .confetti-layer.front .confetti-pixel:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .confetti-layer.mid {
+        z-index: 2;
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+
+    .confetti-layer.mid .confetti-pixel {
+        width: 2.5%;
+        margin: 8% 2.5% 0;
+        padding-bottom: 2.5%;
+        animation-delay: -6.66666667s;
+    }
+
+    .confetti-layer.mid .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.7);
+    }
+
+    .confetti-layer.mid .confetti-pixel:nth-child(odd) {
+        margin-top: 0;
+    }
+
+    .confetti-layer.back {
+        z-index: 1;
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+    }
+
+    .confetti-layer.back .confetti-pixel {
+        width: 1.25%;
+        margin: 5% 5% 0;
+        padding-bottom: 1.25%;
+    }
+
+    .confetti-layer.back .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.9);
+    }
+
+    .confetti-layer.back .confetti-pixel:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .banner-content {
+        display: table;
+        color: white;
+        z-index: 5;
+    }
+
+    .banner-content .logo h1 {
+        font-weight: 900;
+        font-size: 60px;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        left: 20%;
+        z-index: 5;
+        top: 45vh;
+        letter-spacing: 2px;
+    }
+
+    .banner-content .logo img {
+        position: absolute;
+        left: 33%;
+        z-index: 5;
+    }
+
+    @keyframes confettiDrop {
+        0% {
+            transform: none;
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .header {
+        width: 100%;
+    }
+
+    .confetti {
+        position: relative;
+        height: 70vh;
+        background: #484c4f;
+        overflow: hidden;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .confetti .confetti-layer {
+        opacity: 0;
+        transition: opacity 2s;
+    }
+
+    .confetti.active .confetti-layer {
+        opacity: 1;
+    }
+
+    .confetti-pixel {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        height: 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        animation: 10s confettiDrop ease-in-out infinite alternate;
+    }
+
+    .confetti-pixel:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .confetti-layer {
+        display: table;
+        position: absolute;
+        left: -10%;
+        width: 120%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .confetti-layer .inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .confetti-layer.front {
+        z-index: 3;
+    }
+
+    .confetti-layer.front .confetti-pixel {
+        width: 5%;
+        margin: 10% 5% 0;
+        padding-bottom: 5%;
+        animation-delay: -3.33333333s;
+    }
+
+    .confetti-layer.front .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.5);
+    }
+
+    .confetti-layer.front .confetti-pixel:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .confetti-layer.mid {
+        z-index: 2;
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+
+    .confetti-layer.mid .confetti-pixel {
+        width: 2.5%;
+        margin: 8% 2.5% 0;
+        padding-bottom: 2.5%;
+        animation-delay: -6.66666667s;
+    }
+
+    .confetti-layer.mid .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.7);
+    }
+
+    .confetti-layer.mid .confetti-pixel:nth-child(odd) {
+        margin-top: 0;
+    }
+
+    .confetti-layer.back {
+        z-index: 1;
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+    }
+
+    .confetti-layer.back .confetti-pixel {
+        width: 1.25%;
+        margin: 5% 5% 0;
+        padding-bottom: 1.25%;
+    }
+
+    .confetti-layer.back .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.9);
+    }
+
+    .confetti-layer.back .confetti-pixel:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .banner-content {
+        display: table;
+        color: white;
+        z-index: 5;
+    }
+
+    .banner-content .logo h1 {
+        font-weight: 900;
+        font-size: 60px;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        left: 26%;
+        z-index: 5;
+        top: 35vh;
+        letter-spacing: 2px;
+    }
+
+    .banner-content .logo img {
+        position: absolute;
+        left: 36%;
+        z-index: 5;
+    }
+
+    @keyframes confettiDrop {
+        0% {
+            transform: none;
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .header {
+        width: 100%;
+    }
+
+    .confetti {
+        position: relative;
+        height: 100vh;
+        background: #484c4f;
+        overflow: hidden;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .confetti .confetti-layer {
+        opacity: 0;
+        transition: opacity 2s;
+    }
+
+    .confetti.active .confetti-layer {
+        opacity: 1;
+    }
+
+    .confetti-pixel {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        height: 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        animation: 10s confettiDrop ease-in-out infinite alternate;
+    }
+
+    .confetti-pixel:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .confetti-layer {
+        display: table;
+        position: absolute;
+        left: -10%;
+        width: 120%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .confetti-layer .inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .confetti-layer.front {
+        z-index: 3;
+    }
+
+    .confetti-layer.front .confetti-pixel {
+        width: 5%;
+        margin: 10% 5% 0;
+        padding-bottom: 5%;
+        animation-delay: -3.33333333s;
+    }
+
+    .confetti-layer.front .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.5);
+    }
+
+    .confetti-layer.front .confetti-pixel:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .confetti-layer.mid {
+        z-index: 2;
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+
+    .confetti-layer.mid .confetti-pixel {
+        width: 2.5%;
+        margin: 8% 2.5% 0;
+        padding-bottom: 2.5%;
+        animation-delay: -6.66666667s;
+    }
+
+    .confetti-layer.mid .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.7);
+    }
+
+    .confetti-layer.mid .confetti-pixel:nth-child(odd) {
+        margin-top: 0;
+    }
+
+    .confetti-layer.back {
+        z-index: 1;
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+    }
+
+    .confetti-layer.back .confetti-pixel {
+        width: 1.25%;
+        margin: 5% 5% 0;
+        padding-bottom: 1.25%;
+    }
+
+    .confetti-layer.back .confetti-pixel:after {
+        background-color: rgba(72, 76, 79, 0.9);
+    }
+
+    .confetti-layer.back .confetti-pixel:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .banner-content {
+        display: table;
+        color: white;
+        z-index: 5;
+    }
+
+    .banner-content .logo h1 {
+        font-weight: 900;
+        font-size: 60px;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        left: 33%;
+        z-index: 5;
+        top: 60vh;
+        letter-spacing: 2px;
+    }
+
+    .banner-content .logo img {
+        position: absolute;
+        left: 39%;
+        z-index: 5;
+    }
+
+    @keyframes confettiDrop {
+        0% {
+            transform: none;
+        }
+    }
+}
