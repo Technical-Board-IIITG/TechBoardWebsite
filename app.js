@@ -19,8 +19,16 @@ app.get('/landing', (req, res) => {
 	res.render('./Design_landing/index.ejs');
 });
 
-app.get('/landing/facility', (req, res) => {
-	res.render('./Design_landing/facility/facility.ejs');
+app.get('/landing/facilities', (req, res) => {
+	res.render('./Design_landing/facilities/facilities.ejs');
+});
+
+app.get('/landing/events', (req, res) => {
+	res.render('./Design_landing/events/events.ejs');
+});
+
+app.get('/landing/initiatives', (req, res) => {
+	res.render('./Design_landing/initiatives/initiatives.ejs');
 });
 
 app.get('/xclub', (req, res) => {
