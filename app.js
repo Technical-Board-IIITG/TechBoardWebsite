@@ -35,6 +35,6 @@ app.get('/xclub/resources', (req, res) => {
 	res.render('./Design_X_Club/resouces/resourse.ejs');
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
 	console.log("Connected to port " + port);
 });
