@@ -23,6 +23,18 @@ app.get('/xclub/hof', (req, res) => {
 	res.render('./Design_X_Club/hall_of_fame/hall_of_fame.ejs');
 });
 
+app.get('/xclub/gallery', (req, res) => {
+	res.render('./Design_X_Club/gallery/gallery.ejs');
+});
+
+app.get('/xclub/gallery/archive', (req, res) => {
+	res.render('./Design_X_Club/gallery/index.ejs');
+});
+
+app.get('/xclub/resources', (req, res) => {
+	res.render('./Design_X_Club/resouces/resourse.ejs');
+});
+
 app.listen(port, () => {
 	console.log("Connected to port " + port);
 });
