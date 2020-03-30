@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="EventPage.css">
+    <link rel="stylesheet" type="text/css" href="/public/Design_Landing/EventsPage/EventPage.css">
 	<title>Technical Board, Events Page</title>
 	
 </head>
@@ -19,31 +19,31 @@
 
 		<div class="container-fluid">
       <a class="navbar-brand mr-0 py-0" href="https://www.iiitg.ac.in" title='IIITG Home Page'>
-        <img class='navbar-brand mr-0 py-0' src= 'CollegeLogo.png' height='32px'>
+        <img class='navbar-brand mr-0 py-0' src= '/public/Design_Landing/EventsPage/CollegeLogo.png' height='32px'>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
       </button>
       
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
         <ul class="navbar-nav align-items-center">
-          <li class="nav-item mx-5">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="#">Home</a>
           </li>
-          <li class="nav-item mx-5">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="#">Facilities</a>
           </li>
-          <li class="nav-item mx-5">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="#">Gallery</a>
           </li>
-          <li class="nav-item mx-5">
+          <li class="nav-item mx-4">
             <a class="nav-link active" href="#">Events</a>
           </li>
-          <li class="nav-item mx-5">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="#">Hall Of Fame</a>
           </li>
-          <li class="nav-item mx-5">
-            <a class="nav-link" href="/views/Design_landing/InitiativesPage/InitiativePage.html">Initiatives</a>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="/views/Design_landing/InitiativesPage/InitiativePage.ejs">Initiatives</a>
           </li>
 
           <li class="nav-item dropdown mx-5">
@@ -68,23 +68,30 @@
 
 
   <!-- HEADER -->
-  <section class="container-fluid" id="header">
-    <div class="row">
-      <div class="row">
-        <img src="YuvaanCover.jpg" alt="IIITG Yuvaan" class="img-fluid" id="header-image">
-      </div>
-      <div class="row header-text align-items-end">
-        <h4>Heard Of...</h4>
-        <h2>YUVAAN!!</h2>
-      </div>
+  <section class="row" id="header">
+    <div class="col">
       <div class="row header-text">
-        <h6>YUVAAN is the annual techno-cultural and sports festival of Indian Institute of Information Technology, Guwahati (IIITG), a budding tech institute with the potential to make this world a better place. Since its inception in 2016, YUVAAN has become one of the eminent fests in the NORTH-EAST.</h6>
+        <h4>Somethings are inevitable</h4>
+      </div>
+      <div class="row">
+        <video autoplay controls id="header-video">
+          <source type="video/mp4" src="/public/Design_Landing/EventsPage/YuvaanVideo.mp4">
+          Your browser does not support HTML5 mp4 video.
+        </video>
+      </div>
+      <div class="row justify-content-center pt-3">
+        <a href="http://www.iiitg.ac.in/yuvaan2020/" class="btn btn-info">
+          Know More
+        </a>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <a href="http://www.iiitg.ac.in/yuvaan2020/" class="btn btn-info">
-        Know More
-      </a>
+    <div class="col px-5 mx-5">
+      <div class="row header-text">
+        <h2>"Don't let any opportunity go by unnoticed"</h2>
+      </div>
+      <div class="row justify-content-center" style="font-size: 2rem;">
+        <a href="#UpcomingEventsPage"><span class="fas fa-angle-down"></span></a>
+      </div>
     </div>
   </section>
   <!-- HEADER ENDS-->
@@ -129,27 +136,27 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <a href="#PastModalEvent1" data-toggle="modal">
-            <img src="EventsImg.jpg" alt="Event name">
+            <img src="/public/Design_Landing/EventsPage/EventsImg.jpg" alt="Event name">
           </a>
         </div>
         <div class="carousel-item">
           <a href="#PastModalEvent1" data-toggle="modal">
-            <img src="EventsImg.jpg" alt="Event name">
+            <img src="/public/Design_Landing/EventsPage/EventsImg.jpg" alt="Event name">
           </a>
         </div>
         <div class="carousel-item">
           <a href="#PastModalEvent1" data-toggle="modal">
-            <img src="EventsImg.jpg" alt="Event name">
+            <img src="/public/Design_Landing/EventsPage/EventsImg.jpg" alt="Event name">
           </a>
         </div>
         <div class="carousel-item">
           <a href="#PastModalEvent1" data-toggle="modal">
-            <img src="EventsImg.jpg" alt="Event name">
+            <img src="/public/Design_Landing/EventsPage/EventsImg.jpg" alt="Event name">
           </a>
         </div>
         <div class="carousel-item">
           <a href="#PastModalEvent1" data-toggle="modal">
-            <img src="EventsImg.jpg" alt="Event name">
+            <img src="/public/Design_Landing/EventsPage/EventsImg.jpg" alt="Event name">
           </a>
         </div>
       </div>
@@ -207,27 +214,27 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <a href="#UpcomingModalEvent1" data-toggle="modal">
-            <img src="UpcomingEventsJPG.jpg" alt="Event name">
+            <img src="/public/Design_Landing/EventsPage/UpcomingEventsJPG.jpg" alt="Event name">
           </a>
         </div>
         <div class="carousel-item">
           <a href="#UpcomingModalEvent1" data-toggle="modal">
-            <img src="UpcomingEventsJPG.jpg" alt="Event name">
+            <img src="/public/Design_Landing/EventsPage/UpcomingEventsJPG.jpg" alt="Event name">
           </a>
         </div>
         <div class="carousel-item">
           <a href="#UpcomingModalEvent1" data-toggle="modal">
-            <img src="UpcomingEventsJPG.jpg" alt="Event name">
+            <img src="/public/Design_Landing/EventsPage/UpcomingEventsJPG.jpg" alt="Event name">
           </a>
         </div>
         <div class="carousel-item">
           <a href="#UpcomingModalEvent1" data-toggle="modal">
-            <img src="UpcomingEventsJPG.jpg" alt="Event name">
+            <img src="/public/Design_Landing/EventsPage/UpcomingEventsJPG.jpg" alt="Event name">
           </a>
         </div>
         <div class="carousel-item">
           <a href="#UpcomingModalEvent1" data-toggle="modal">
-            <img src="UpcomingEventsJPG.jpg" alt="Event name">
+            <img src="/public/Design_Landing/EventsPage/UpcomingEventsJPG.jpg" alt="Event name">
           </a>
         </div>
       </div>
@@ -266,7 +273,7 @@
 
 
     <!-- FOR BOOTSTRAP AND FONT AWESOME -->
-    <script type="text/javascript" src="EventPage.js"></script>
+    <script type="text/javascript" src="/public/Design_Landing/EventsPage/EventPage.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

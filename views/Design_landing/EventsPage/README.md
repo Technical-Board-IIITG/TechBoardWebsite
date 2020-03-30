@@ -1,1 +1,0 @@
-# Events page of the tech board website
