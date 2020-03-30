@@ -4,7 +4,7 @@
   "description": "Technical Board Website 2020. A Programming Club project.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Technical-Board-IIITG/TechBoardWebsite/issues"
   },
-  "homepage": "https://github.com/Technical-Board-IIITG/TechBoardWebsite#readme"
+  "homepage": "https://github.com/Technical-Board-IIITG/TechBoardWebsite#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
 }
