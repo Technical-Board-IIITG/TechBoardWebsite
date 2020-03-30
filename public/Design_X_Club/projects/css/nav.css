@@ -1,0 +1,27 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+#mainNav {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    opacity: 0.90;
+    width: 100%;
+}
+
+#mainNav .logo {
+    width: 30px;
+    height: 31x;
+}
+
+#mainNav .entry {
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#mainNav .entry:hover{
+    background-color: aqua;
+    transition: ease 1s;
+}
