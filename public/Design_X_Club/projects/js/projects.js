@@ -1,4 +1,3 @@
-// portfolio
 $('.projects ul li a').click(function() {
     var projectID = $(this).attr('href');
     $('.projects ul').addClass('project_open');
