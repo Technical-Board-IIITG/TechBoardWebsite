@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 
 const LandingInitiativesPageSchema = new mongoose.Schema({
+  logo: String,
+  about: String,
   initiatives:[{
     InitiativeTitle: String,
-    InitiativeDetail: String,
+    InitiativeAbout: String,
     InitiativeRef: String,
     InitiativeImage: String
   }]

@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
 
 const LandingEventsPageSchema = new mongoose.Schema({
+  logo: String,
+  about: String,
   events:[{
     EventImage: String,
     EventTitle: String,
-    EventDetail: String,
+    EventAbout: String,
     EventRef: String
   }]
 });
