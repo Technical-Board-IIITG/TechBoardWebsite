@@ -4,17 +4,29 @@ const mongoose = require('mongoose');
 
 const landingPageSchema = new mongoose.Schema({
 
+    logo : URL,
+    quote : String,
+    about : String,
 //member data
-    teamMember : [{
-        photo : String,
+    teamM : [{
+        photo : URL,
         name : String,
-        designation : String,
-        facebook : String,
-        twitter : String,
-        instagram : String
+        position : String,
+        level : Number,
+        contact : [{
+            contactNumber : Number
+        }]
+    }],
+
+    contact : [{
+        socialURLs : [{
+            facebook : URL,
+            twitter : URL,
+            instagram : URL
+        }]
     }]
 
 });
 
 //Creating and exporting the landingData model instance
-module.exports = new mongoose.model('landingPage' , landingPageSchema);
+module.exports = new mongoose.model('Landing' , landingPageSchema);
