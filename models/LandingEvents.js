@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 
 const LandingEventsPageSchema = new mongoose.Schema({
-  logo: String,
-  about: String,
-  events:[{
-    EventImage: String,
-    EventTitle: String,
-    EventAbout: String,
-    EventRef: String
+  logo: String,    //URL of logo image
+  about: String,    //About Para  
+  events:[{     //Events List
+    EventImage: String,     //Event Image URL
+    EventTitle: String,     //Event Name
+    EventAbout: String,     //Event Description
+    EventRef: String      //Event Site Link
   }]
 });
 
