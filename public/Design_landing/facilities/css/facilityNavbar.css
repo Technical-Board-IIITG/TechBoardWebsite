@@ -1,0 +1,33 @@
+.navbar.navbar-light.navbar-expand-md.sticky-top {
+  background-color: #0e4055;
+  /*color: #212529;*/
+}
+
+.navbar-light .navbar-toggler {
+  background-color: #ffffff;
+  width: 55px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: rgba(255,254,254,0.9);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(252,250,250,0.9);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(251,249,249,0.9);
+}
+
+#iconNav {
+  color: rgb(255,255,255);
+}
+
+#iconToggle {
+  height: 30px;
+  width: 45px;
+}
+

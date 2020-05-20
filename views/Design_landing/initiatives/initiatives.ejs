@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- REQUIRED META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FOR BOOTSTRAP AND CSS -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Design_Landing/initiatives/css/InitiativePage.css">
+    <title>Technical Board, Initiatives Page</title>
+</head>
+
+
+<body>
+
+
+  <!-- NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+    <div class="container-fluid">
+      <a class="navbar-brand mr-0 py-0" href="https://www.iiitg.ac.in" title='IIITG Home Page'>
+        <img class='navbar-brand mr-0 py-0' src= '/Design_Landing/events/images/CollegeLogo.png' height='32px'>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#">Facilities</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#">Hall Of Fame</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link active" href="#">Initiatives</a>
+          </li>
+
+          <li class="nav-item dropdown mx-4">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarClubDropdown" data-toggle="dropdown">
+              Clubs <span class="caret"></span>
+            </a>
+            <div class="dropdown-menu drop-menu-left">
+              <a href="#" class="dropdown-item">Programming Club</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Robotics Club</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Mavericks Club</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- NAVBAR ENDS-->
+
+
+  <!-- HEADER-->
+  <section class="container-fluid" id="header">
+    <div class="row header-text">
+        <div class="row">
+          <h1>"Be the change that</h1>
+        </div>
+        <div class="row">
+          <h1>others are waiting for!!"</h1>
+        </div>
+        <div class="row justify-content-center">
+          <a href="#InitiativesPage"><span class="fas fa-angle-down"></span></a>
+        </div>
+    </div>
+  </section>
+  <!-- HEADER ENDS-->
+
+
+  <!-- ABOUT PAGE-->
+  <section class="container" id="AboutPage">
+    <div class="row justify-content-center" id="ABOUT">
+      <h1 class="display-4">ABOUT</h1>
+    </div>
+    <div class="row" id="AboutQuote">
+      <h4>"Initiative is doing the right thing without being told."</h4>
+    </div>
+    <div class="row" id="AboutQuoter">
+      <h3>-Victor Hugo</h3>
+    </div>
+    <div class="row" id="AboutInfo">
+      <h6>This site contains all the information and details about all past initiatives, the currently going ones, and the upcoming ones. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, veniam aperiam modi nisi odio in dolorum corrupti. Natus, nihil? Provident nemo architecto vel similique praesentium, pariatur iusto earum aliquid?</h6>
+    </div>
+  </section>
+  <!-- ABOUT PAGE ENDS-->
+
+
+  <!-- INITIATIVES PAGE-->
+  <section class="container" id="InitiativesPage">
+
+    <div class="row justify-content-center" id="INITIATIVES">
+      <h1 class="display-4">INITIATIVES</h1>
+    </div>
+
+    <!-- INITIATIVES CAROUSEL-->
+    <div id="InitiativesCarousel" class="row carousel slide" data-ride="carousel">
+
+        <ul class="carousel-indicators">
+            <li data-target="#InitiativesCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#InitiativesCarousel" data-slide-to="1"></li>
+            <li data-target="#InitiativesCarousel" data-slide-to="2"></li>
+            <li data-target="#InitiativesCarousel" data-slide-to="3"></li>
+            <li data-target="#InitiativesCarousel" data-slide-to="4"></li>
+        </ul>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#Initiative1" data-toggle="modal">
+            <img src="/Design_Landing/initiatives/images/InitiativeImg.png" alt="Initiative name">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#Initiative1" data-toggle="modal">
+            <img src="/Design_Landing/initiatives/images/InitiativeImg.png" alt="Initiative name">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#Initiative1" data-toggle="modal">
+            <img src="/Design_Landing/initiatives/images/InitiativeImg.png" alt="Initiative name">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#Initiative1" data-toggle="modal">
+            <img src="/Design_Landing/initiatives/images/InitiativeImg.png" alt="Initiative name">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#Initiative1" data-toggle="modal">
+            <img src="/Design_Landing/initiatives/images/InitiativeImg.png" alt="Initiative name">
+          </a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#InitiativesCarousel" data-slide="prev">
+        <span class="fas fa-angle-left" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#InitiativesCarousel" data-slide="next">
+        <span class="fas fa-angle-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+    <!-- INITIATIVES CAROUSEL ENDS-->
+
+    <!-- INITIATIVES MODALS-->
+    <div class="modal fade" id="Initiative1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Initiative Name</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Description of the initiative, prizes if any, or feliciations. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit culpa cupiditate saepe voluptatibus animi soluta pariatur quos consectetur! Cupiditate eaque fugit libero aliquid eligendi deleniti dolore labore iure laborum doloremque?
+          </div>
+          <div class="modal-footer justify-content-between">
+            <a href="#" class="btn btn-info">Gallery</a>
+            <a href="#" class="btn btn-info">Know More</a>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- INITIATIVES MODALS ENDS-->
+
+  </section>
+
+  <!-- FOR BOOTSTRAP AND FONT AWESOME -->
+  <script type="text/javascript" src="/Design_Landing/initiatives/js/InitiativePage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
