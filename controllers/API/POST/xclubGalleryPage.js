@@ -17,6 +17,7 @@ router.post('/api/club/gallery',(req,res)=>{
                 title : req.body.title,
                 about : req.body.about,
                 coverImage : req.body.coverImage,
+                date : req.body.date,
                 urls : req.body.urls
             });
         
