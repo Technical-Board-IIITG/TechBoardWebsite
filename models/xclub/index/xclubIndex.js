@@ -6,20 +6,20 @@ const xclubIndexPageSchema = new mongoose.Schema({
 
     clubID : Number,
     name : String,
-    logo : URL,
+    logo : String,
     quote : String,
     about : String,
 //member card data
 coordinators : [{
-    photo : URL,
+    photo : String,
     name : String,
     position : String,
     about : String,
     contact : [{
         contactNumber : Number,
-        facebook : URL,
-        instagram : URL,
-        linkedin : URL,
+        facebook : String,
+        instagram : String,
+        linkedin : String,
         email : String
         }]
     

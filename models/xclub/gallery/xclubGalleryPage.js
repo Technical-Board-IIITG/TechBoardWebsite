@@ -10,10 +10,10 @@ const xclubGalleryPageSchema = new mongoose.Schema({
     image: [{
         title : String,
         about : String,
-        coverImage : URL,
+        coverImage : String,
         date : Date,
         urls : [{
-            url : URL
+            url : String
         }]
     }] 
 });

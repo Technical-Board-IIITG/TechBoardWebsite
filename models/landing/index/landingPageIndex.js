@@ -4,25 +4,32 @@ const mongoose = require('mongoose');
 
 const landingPageSchema = new mongoose.Schema({
 
-    logo : URL,
+    logo : String,
     quote : String,
     about : String,
 //member data
     teamM : [{
-        photo : URL,
+        photo : String,
         name : String,
         position : String,
         level : Number,
         contact : [{
-            contactNumber : Number
+            contactNumber : Number,
+            facebook : String,
+            twitter : String,
+            instagram : String,
+            linkedIn : String
         }]
     }],
 
     contact : [{
         socialURLs : [{
-            facebook : URL,
-            twitter : URL,
-            instagram : URL
+            facebook : String,
+            twitter : String,
+            instagram : String,
+            linkedIn : String,
+            snapchat : String
+
         }]
     }]
 
