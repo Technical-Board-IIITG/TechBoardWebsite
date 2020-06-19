@@ -1,7 +1,8 @@
-var express = require('express');
-var app = express();
+const express = require('express');
 
-var router = express.Router();
+const app = express();
+
+const router = express.Router();
 
 const mongoose = require('mongoose');
 
@@ -22,5 +23,7 @@ router.use(require('./API/DELETE/xclubIndex.js'));
 router.use(require('./API/POST/xclubGalleryPage.js'));
 router.use(require('./API/GET/xclubGalleryPage.js'));
 router.use(require('./API/DELETE/xclubGalleryPage.js'));
+
+router.use(require('./API/GET/gallery.js'));
 
 module.exports = router;
