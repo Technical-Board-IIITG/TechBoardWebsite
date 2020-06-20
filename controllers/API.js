@@ -23,4 +23,6 @@ router.use(require('./API/POST/xclubGalleryPage.js'));
 router.use(require('./API/GET/xclubGalleryPage.js'));
 router.use(require('./API/DELETE/xclubGalleryPage.js'));
 
+router.use(require('./API/GET/gallery.js'));
+
 module.exports = router;
